@@ -15,6 +15,7 @@ body{
 
 header{
     height: auto;
+    background-color: #403c58;
     
 }
 .navbar{
@@ -30,7 +31,7 @@ header{
 }
 
 .navbar h1 span{
-    color: rgb(18, 18, 19);
+    color: rgb(255, 255, 255);
 }
 
 .tabs{
@@ -48,26 +49,32 @@ header{
 .tabs ul li{
     border: 1px solid transparent;
     padding: 0.5rem;
+    
 }
 
 
 .tabs ul li:hover{
     box-shadow: inset 0 0 10px rgb(255, 255, 255);
-    border-color: purple;
+    border-color: rgb(123, 117, 123);
     
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: rgb(172, 57, 195);
+    background-color: rgb(37, 50, 83);
     color: white;   
 }
 
-a{
+.tabs ul li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 1.1rem;
     transition:step-start 0.3s;
+    color: white;
     
     
+    
+}
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 .navbar #talk{
     padding:0.5rem 2rem;
@@ -164,12 +171,17 @@ main{
 .sociallink div i{
     font-size: 2rem;
     cursor: pointer;
+    color: #404e67;
+    transition: all 0.3s;
 
 }
+
 
 .sociallink div i:hover{
-    box-shadow: 0 0 15px rgb(56, 54, 54);
+    transform:translateY(-5px);
+    color: #181bd4;
 }
+
 
 .pic{
     display: flex;
@@ -183,6 +195,7 @@ main{
 
 .pic h1{
     text-align: center;
+    font-weight: bolder;
 }
 .pic p{
     text-align: center;
@@ -206,6 +219,20 @@ main{
     transform: scale(1.05);
     box-shadow: 0 0 50px rgb(181, 16, 145);
 }
+
+footer{
+    background-color: #201c39;
+    padding: 1rem;
+    color: white;
+    
+}
+.footer p{
+    padding-bottom: 0.5rem;
+}
+.footer a{
+    color: white;
+}
+
 
 
 @media (max-width:768px){
